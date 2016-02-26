@@ -6,13 +6,13 @@
 //  Copyright © 2016 Steve. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "STSAppDelegate.h"
 
-@interface AppDelegate ()
+@interface STSAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation STSAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

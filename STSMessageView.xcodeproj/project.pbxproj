@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		AAF7B4411C80099E00B7F55D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF7B4401C80099E00B7F55D /* main.m */; };
-		AAF7B4441C80099E00B7F55D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF7B4431C80099E00B7F55D /* AppDelegate.m */; };
-		AAF7B4471C80099E00B7F55D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF7B4461C80099E00B7F55D /* ViewController.m */; };
+		AAF7B4441C80099E00B7F55D /* STSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF7B4431C80099E00B7F55D /* STSAppDelegate.m */; };
+		AAF7B4471C80099E00B7F55D /* STSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF7B4461C80099E00B7F55D /* STSViewController.m */; };
 		AAF7B44A1C80099E00B7F55D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF7B4481C80099E00B7F55D /* Main.storyboard */; };
 		AAF7B44C1C80099E00B7F55D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAF7B44B1C80099E00B7F55D /* Assets.xcassets */; };
 		AAF7B44F1C80099E00B7F55D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAF7B44D1C80099E00B7F55D /* LaunchScreen.storyboard */; };
 		AAF7B45A1C80099E00B7F55D /* STSMessageViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF7B4591C80099E00B7F55D /* STSMessageViewTests.m */; };
+		AAF7B4661C800A5B00B7F55D /* STSMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF7B4651C800A5B00B7F55D /* STSMessageView.m */; };
+		AAF7B4681C800AAD00B7F55D /* STSMessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAF7B4671C800AAD00B7F55D /* STSMessageView.xib */; };
+		AAF7B46A1C800B5D00B7F55D /* Cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = AAF7B4691C800B5D00B7F55D /* Cancel.png */; };
+		AAF7B46C1C800BFB00B7F55D /* WarningShield.png in Resources */ = {isa = PBXBuildFile; fileRef = AAF7B46B1C800BFB00B7F55D /* WarningShield.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,10 +33,10 @@
 /* Begin PBXFileReference section */
 		AAF7B43C1C80099E00B7F55D /* STSMessageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STSMessageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF7B4401C80099E00B7F55D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AAF7B4421C80099E00B7F55D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		AAF7B4431C80099E00B7F55D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AAF7B4451C80099E00B7F55D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AAF7B4461C80099E00B7F55D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AAF7B4421C80099E00B7F55D /* STSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STSAppDelegate.h; sourceTree = "<group>"; };
+		AAF7B4431C80099E00B7F55D /* STSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STSAppDelegate.m; sourceTree = "<group>"; };
+		AAF7B4451C80099E00B7F55D /* STSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STSViewController.h; sourceTree = "<group>"; };
+		AAF7B4461C80099E00B7F55D /* STSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STSViewController.m; sourceTree = "<group>"; };
 		AAF7B4491C80099E00B7F55D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AAF7B44B1C80099E00B7F55D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAF7B44E1C80099E00B7F55D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +44,11 @@
 		AAF7B4551C80099E00B7F55D /* STSMessageViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STSMessageViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF7B4591C80099E00B7F55D /* STSMessageViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STSMessageViewTests.m; sourceTree = "<group>"; };
 		AAF7B45B1C80099E00B7F55D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAF7B4641C800A5B00B7F55D /* STSMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSMessageView.h; sourceTree = "<group>"; };
+		AAF7B4651C800A5B00B7F55D /* STSMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSMessageView.m; sourceTree = "<group>"; };
+		AAF7B4671C800AAD00B7F55D /* STSMessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STSMessageView.xib; sourceTree = "<group>"; };
+		AAF7B4691C800B5D00B7F55D /* Cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cancel.png; sourceTree = "<group>"; };
+		AAF7B46B1C800BFB00B7F55D /* WarningShield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WarningShield.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +90,15 @@
 		AAF7B43E1C80099E00B7F55D /* STSMessageView */ = {
 			isa = PBXGroup;
 			children = (
-				AAF7B4421C80099E00B7F55D /* AppDelegate.h */,
-				AAF7B4431C80099E00B7F55D /* AppDelegate.m */,
-				AAF7B4451C80099E00B7F55D /* ViewController.h */,
-				AAF7B4461C80099E00B7F55D /* ViewController.m */,
+				AAF7B4421C80099E00B7F55D /* STSAppDelegate.h */,
+				AAF7B4431C80099E00B7F55D /* STSAppDelegate.m */,
+				AAF7B4451C80099E00B7F55D /* STSViewController.h */,
+				AAF7B4461C80099E00B7F55D /* STSViewController.m */,
+				AAF7B4641C800A5B00B7F55D /* STSMessageView.h */,
+				AAF7B4651C800A5B00B7F55D /* STSMessageView.m */,
+				AAF7B4671C800AAD00B7F55D /* STSMessageView.xib */,
+				AAF7B4691C800B5D00B7F55D /* Cancel.png */,
+				AAF7B46B1C800BFB00B7F55D /* WarningShield.png */,
 				AAF7B4481C80099E00B7F55D /* Main.storyboard */,
 				AAF7B44B1C80099E00B7F55D /* Assets.xcassets */,
 				AAF7B44D1C80099E00B7F55D /* LaunchScreen.storyboard */,
@@ -192,7 +206,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAF7B44F1C80099E00B7F55D /* LaunchScreen.storyboard in Resources */,
+				AAF7B4681C800AAD00B7F55D /* STSMessageView.xib in Resources */,
 				AAF7B44C1C80099E00B7F55D /* Assets.xcassets in Resources */,
+				AAF7B46A1C800B5D00B7F55D /* Cancel.png in Resources */,
+				AAF7B46C1C800BFB00B7F55D /* WarningShield.png in Resources */,
 				AAF7B44A1C80099E00B7F55D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,8 +228,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAF7B4471C80099E00B7F55D /* ViewController.m in Sources */,
-				AAF7B4441C80099E00B7F55D /* AppDelegate.m in Sources */,
+				AAF7B4471C80099E00B7F55D /* STSViewController.m in Sources */,
+				AAF7B4661C800A5B00B7F55D /* STSMessageView.m in Sources */,
+				AAF7B4441C80099E00B7F55D /* STSAppDelegate.m in Sources */,
 				AAF7B4411C80099E00B7F55D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +418,7 @@
 				AAF7B4601C80099E00B7F55D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AAF7B4611C80099E00B7F55D /* Build configuration list for PBXNativeTarget "STSMessageViewTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +427,7 @@
 				AAF7B4631C80099E00B7F55D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

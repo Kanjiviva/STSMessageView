@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="STSMessageView">
+            <connections>
+                <outlet property="STSMessageCloseButton" destination="QQT-Tx-y5b" id="PC2-Z5-b5q"/>
+                <outlet property="STSMessageImageView" destination="6K5-Nz-cQp" id="bfU-X4-OJc"/>
+                <outlet property="STSMessageLabel" destination="CXk-FM-Fxu" id="qzB-5l-kdB"/>
+                <outlet property="STSMessageView" destination="uzO-lr-RXV" id="oXX-Nd-Sbg"/>
+                <outlet property="view" destination="iN0-l3-epB" id="xZL-m4-sW2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzO-lr-RXV">
+                    <rect key="frame" x="0.0" y="0.0" width="364" height="50"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WarningShield.png" translatesAutoresizingMaskIntoConstraints="NO" id="6K5-Nz-cQp">
+                            <rect key="frame" x="8" y="5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="V7R-u0-qa6"/>
+                                <constraint firstAttribute="width" constant="40" id="nLq-75-UQr"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXk-FM-Fxu">
+                            <rect key="frame" x="56" y="14.5" width="252" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQT-Tx-y5b">
+                            <rect key="frame" x="316" y="5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="jGV-fx-8hI"/>
+                                <constraint firstAttribute="height" constant="40" id="wHu-4j-JQF"/>
+                            </constraints>
+                            <state key="normal" image="Cancel.png"/>
+                            <connections>
+                                <action selector="closeButtonTapped:" destination="-1" eventType="touchUpInside" id="E9K-rU-yBi"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.87450980389999999" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="CXk-FM-Fxu" firstAttribute="leading" secondItem="6K5-Nz-cQp" secondAttribute="trailing" constant="8" id="4f9-bY-EAh"/>
+                        <constraint firstItem="QQT-Tx-y5b" firstAttribute="centerY" secondItem="uzO-lr-RXV" secondAttribute="centerY" id="IHL-Ch-sND"/>
+                        <constraint firstItem="QQT-Tx-y5b" firstAttribute="leading" secondItem="CXk-FM-Fxu" secondAttribute="trailing" constant="8" id="PKN-5o-2qo"/>
+                        <constraint firstItem="6K5-Nz-cQp" firstAttribute="centerY" secondItem="uzO-lr-RXV" secondAttribute="centerY" id="Qsr-Rb-t5U"/>
+                        <constraint firstItem="6K5-Nz-cQp" firstAttribute="leading" secondItem="uzO-lr-RXV" secondAttribute="leading" constant="8" id="YXM-Io-fuw"/>
+                        <constraint firstAttribute="trailing" secondItem="QQT-Tx-y5b" secondAttribute="trailing" constant="8" id="f1A-V6-F96"/>
+                        <constraint firstItem="CXk-FM-Fxu" firstAttribute="centerY" secondItem="uzO-lr-RXV" secondAttribute="centerY" id="mMK-Wq-efe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="uzO-lr-RXV" secondAttribute="bottom" id="AeM-R0-G4A"/>
+                <constraint firstItem="uzO-lr-RXV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AmG-6c-9PR"/>
+                <constraint firstItem="uzO-lr-RXV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="P15-wi-PYW"/>
+                <constraint firstAttribute="trailing" secondItem="uzO-lr-RXV" secondAttribute="trailing" id="R9P-8Y-GJB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="295" y="683"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Cancel.png" width="50" height="50"/>
+        <image name="WarningShield.png" width="48" height="48"/>
+    </resources>
+</document>
